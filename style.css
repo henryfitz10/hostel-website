@@ -5,6 +5,7 @@
 
 #sticky {
 	margin-top: 5px;
+	margin-bottom: 20px;
 	margin-right: 0px;
 	color: #000000;
 	background-color: #ffb238;
@@ -15,10 +16,7 @@
 body {
 	background-color: #ffffff;
 }
-header {
-	height: 180px;
-	
-}
+
 #map {
     width: 500px;
     height: 400px;
@@ -34,7 +32,11 @@ header {
 	height: 50px;
 	width: 50px;
 }
-#thomond {
+#thomond  {
+	height: 100%;
+	width: 100%;
+}
+#interior  {
 	height: 100%;
 	width: 100%;
 }
@@ -63,14 +65,16 @@ h2{
 	border-radius: 10px; 
 }
 	
-}
 footer {
+	margin-top: 10px;
 	background-color: #333;
-	height: 100px;
-	display: fixed;
+	height: 200px;
+	display: clear both;
+	border-radius: 7px;
 }
 footer p{
 	color: #ffffff;
+
 }
 #description {
 	margin-top: 20px;
@@ -79,6 +83,7 @@ footer p{
 	background-color: #98b700;
 	border-radius: 7px;
 	color: #ffffff;
+	
 }
 
 #description p {
@@ -104,4 +109,8 @@ img {
   -webkit-column-gap: 1em;
   column-count: 3;
   column-gap: 1em;
+}
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
 }
