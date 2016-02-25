@@ -1,86 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel = "stylesheet" href = "style.css"/>
+
 <head>
-	<title>Hostel Casa Yoses</title>
-	<header></header>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" href = "style.css"/>
+		
+		<style>
+			.carousel-inner img { width: 200px; height }
+		</style>
+
+	<title>The School House Hostel</title>
 </head>
+
+<div class="container-fluid">
+<header>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+			<a class="navbar-brand" href="#">The School House Hostel</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#rooms-anchor">Rooms</a></li>
+				<li><a href="#facilities-anchor">Facilities</a></li> 
+				<li><a href="#location-anchor">Location</a></li> 
+			</ul>
+			
+		
+		</div>
+	</div>
+	<div id="sticky" class="book_engine">
+												
+												<div class="inner_booking">
+													
+												<span class="book_a_room">Book A room</span>
+														
+													
+												<form target="_blank" action="" method="POST" id="top-search-form">
+													
+													<input type="hidden" value="" name="Submit" id="Submit">
+													<input type="hidden" value="Ireland" name="CountryChoice" id="CountryChoice">
+													<input type="hidden" value="EUR" name="Currency" id="Currency">
+													<input type="hidden" value="23" name="selDay" id="selDay">
+													<input type="hidden" value="02" name="selMonth" id="selMonth">
+													<input type="hidden" value="2016" name="selYear" id="selYear">
+													<input type="hidden" value="search" name="SubmitButton" id="SubmitButton">
+													<div class="book_date">
+															<label>Date:</label>
+															<input type="text" size="15" id="main_datepicker" class="hasDatepicker"><img onclick="$('#main_datepicker').datepicker('show'); " class="ui-datepicker-trigger" src="http://www.barnacles.ie/wp-content/themes/barnacles/images/days/date_img23.jpg">
+													</div>
+														 
+													 <div class="book_nights">    
+															<label>Nights:</label>
+															<select name="NumNights"> 
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+																<option>5</option>
+																<option>6</option>
+																<option>7</option>
+																<option>8</option>
+																<option>9</option>
+																<option>10</option>
+																<option>11</option>
+																<option>12</option>
+																<option>13</option>
+																<option>14</option>
+															</select>
+													</div>
+													
+													<div class="book_guests">    
+															<label>Guests:</label>
+															 <select name="NumNights"> 
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+																<option>5</option>
+																<option>6</option>
+																<option>7</option>
+																<option>8</option>
+																<option>9</option>
+																<option>10</option>
+																<option>11</option>
+																<option>12</option>
+													
+													<div class="book_search">    
+														<input type="submit" value="Book Now" class="searchform">
+													</div>
+												<input type="hidden" value="b8siavyejaoe4em3u1jb3b7v29ycd2m2c1ffce92re9c2" name="anti-captcha-token"></form>
+														
+												 </div>   
+												
+										 </div>
+</nav>
+
+
+
+</header>
+
 <body>
 
 
-<img src = "./img/logo.png">
-<div id="sticky" class="book_engine">
-                        
-                        <div class="inner_booking">
-                        	
-                            <span class="book_a_room">Book A room</span>
-                            
-                          
-                        <form target="_blank" action="http://reservations.bookhostels.com/barnacles.ie/" method="POST" id="top-search-form">
-                          
-                          <input type="hidden" value="" name="Submit" id="Submit">
-                          <input type="hidden" value="Ireland" name="CountryChoice" id="CountryChoice">
-                          <input type="hidden" value="EUR" name="Currency" id="Currency">
-                          <input type="hidden" value="23" name="selDay" id="selDay">
-                          <input type="hidden" value="02" name="selMonth" id="selMonth">
-                          <input type="hidden" value="2016" name="selYear" id="selYear">
-                          <input type="hidden" value="search" name="SubmitButton" id="SubmitButton">
-                          <div class="book_date">
-                              <label>Date:</label>
-                              <input type="text" size="15" id="main_datepicker" class="hasDatepicker"><img onclick="$('#main_datepicker').datepicker('show'); " class="ui-datepicker-trigger" src="http://www.barnacles.ie/wp-content/themes/barnacles/images/days/date_img23.jpg">
-                          </div>
-                             
-                           <div class="book_nights">    
-                              <label>Nights:</label>
-                              <select name="NumNights"> 
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                                <option>13</option>
-                                <option>14</option>
-                              </select>
-                          </div>
-                          
-                          <div class="book_guests">    
-                              <label>Guests:</label>
-                               <select name="NumNights"> 
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                          
-                          <div class="book_search">    
-                          	<input type="submit" value="Book Now" class="searchform">
-                          </div>
-                        <input type="hidden" value="b8siavyejaoe4em3u1jb3b7v29ycd2m2c1ffce92re9c2" name="anti-captcha-token"></form>
-                            
-                         </div>   
-                        
-                        </div>
+<!-- @begin CARROUSEL 1 -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+		<li data-target="#myCarousel" data-slide-to="5"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="./img/carrousel-images/image-carrousel-1.jpg" class="img-responsive" id="thomond" alt="Chania">
+		</div>
+
+		<div class="item">
+			<img src="./img/carrousel-images/image-carrousel-2.jpg" class="img-responsive" id="thomond" alt="Chania">
+		</div>
+
+		<div class="item">
+			<img src="./img/carrousel-images/image-carrousel-3.jpg" class="img-responsive" id="thomond" alt="Chania">
+		</div>
+
+		<div class="item">
+			<img src="./img/carrousel-images/image-carrousel-4.jpg" class="img-responsive" id="thomond" alt="Flower">
+		</div>
+		<div class="item">
+			<img src="./img/carrousel-images/image-carrousel-5.jpg" class="img-responsive" id="thomond" alt="Flower">
+		</div>		
+	</div>
+
+	<!-- Left and right controls -->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<!-- @end CARROUSEL 1 -->
+
+<!-- Rooms and dropdowns-->
+<h2 id="">About Us</h2>
+<section id="description">
+<p>Located in the heart of Limerick City, The School House Hostel is ideally situated between Limerick's premier nightlife quarter and King John's Castle. This nouveau establishment is newly opened and offers world class hostel accommodation at affordable prices. We have free secure onsite car parking and an information desk with all the help you need to plan your stay in Limerick City and its treasures.</p>
+
+<p>Lorem ipsum dolor sit amet, ius et tantas eirmod, cu aliquid aliquam est, his ad case eruditi dissentiet. Qui eu cibo mazim soleat, dicat tempor pertinacia sea at. Ei cum esse dicant pertinacia, te novum altera quidam usu, adipisci expetendis cu has. Nec id quodsi suscipit, eirmod probatus indoctum id duo.
+
+Id erant simul sea, has alterum tractatos constituam ex, duo ne stet mucius mentitum. Indoctum salutandi ius et. Eu quo soluta accusam menandri, esse fuisset eos et. Eam possit eligendi no. Feugiat contentiones vel ea, nec etiam minimum disputando no.
+
+Ad mutat latine qui, eum regione omnesque apeirian ei, te velit malorum mel. Dolores percipit luptatum vis et. Ex modus malis albucius eum, saepe eripuit id eam, doming moderatius at has. Vel quas vulputate ea, movet petentium referrentur sea et.</p>
+</section>
+
+
+<script>
+$('.carousel-sync').on('slide.bs.carousel', function(ev) {
+  	var dir = ev.direction == 'right' ? 'prev' : 'next';
+	$('.carousel-sync').not('.sliding').addClass('sliding').carousel(dir);
+});
+$('.carousel-sync').on('slid.bs.carousel', function(ev) {
+	$('.carousel-sync').removeClass('sliding');
+});
+</script>
+
+<!--
+<div id="carousel-a" class="carousel slide carousel-sync" data-ride="carousel" data-pause="false">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/300x200/1abc9c/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/2ecc71/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/3498db/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/9b59b6/fff">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-a" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-a" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<div id="carousel-b" class="carousel slide carousel-sync" data-ride="carousel" data-pause="false">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/300x200/1abc9c/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/2ecc71/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/3498db/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/9b59b6/fff">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-b" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-b" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+<div id="carousel-c" class="carousel slide" data-ride="carousel" data-pause="false">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/300x200/1abc9c/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/2ecc71/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/3498db/fff">
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/300x200/9b59b6/fff">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-c" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-c" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+-->
 
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- @begin CARROUSEL 2 -->
+<div id="CarouselTwo" class="carousel slide" data-ride="carousel">
+	
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="./img/lobby.jpg" class="img-responsive" id="" alt="Chania">
+		</div>
+
+		<div class="item">
+			<img src="./img/DSC_0135.jpg" class="img-responsive" id="" alt="Chania">
+		</div>
+
+		<div class="item">
+			<img src="./img/2264596.jpg" class="img-responsive" id="" alt="Chania">
+		</div>
+
+		<div class="item">
+			<img src="./img/17.jpg" class="img-responsive" id="" alt="Chania">
+		</div>	
+	</div>
+
+	<!-- Left and right controls -->
+	<a class="left carousel-control" href="#CarouselTwo" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#CarouselTwo" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+
+</div>
+<!-- @end CARROUSEL 2 -->
+
+<div id="main" <div class="col-md-6"></div>
+<h2 id="rooms-anchor">Rooms and Services</h2>
+
+	
+	
+	<div class="items-container-rounded">
+		<div class="panel-heading">
+			<h3 class="panel-title"><a data-toggle="collapse" href="#collapseOne" data-parent="#accordion">LARGE DORM</a></h3>
+			<p>8-10 BEDS WITH PRIVATE BATHROOM</p>
+		</div>
+
+		<div id="collapseOne" class="panel-collapse collapse">
+	 		<div class="panel-body">
+				<ul>
+					<li>8-10 beds</li>
+					<li>En-suite bathroom</li>
+					<li>Daily cleaning</li>
+					<li>Lockers</li>
+					<li>Electrical Sockets</li>
+				</ul>
+				<img src="./img/05_matchbox_singapore-2.jpg">
+		 	</div>
+		</div>
+	</div>
+
+		<div class="items-container-rounded">
+			 <div class="panel-heading">
+								<h3 class="panel-title"><a data-toggle="collapse" href="#collapseTwo" data-parent="#accordion">MEDIUM DORM</a></h3>
+								<p>6 BEDS WITH PRIVATE BATHROOM</p>
+				</div>
+
+				<div id="collapseTwo" class="panel-collapse collapse">
+
+							 <div class="panel-body">
+								 <ul>
+									<li>6 beds</li>
+									<li>En-suite bathroom</li>
+									<li>Daily cleaning</li>
+									<li>Lockers</li>
+									<li>Electrical Sockets</li>
+									</ul>
+									<img src="./img/saphaipae-hostel-bangkok_251120100538490534.jpg">
+								</div>
+						</div>
+		</div>
+<div class="items-container-rounded">
+			 <div class="panel-heading">
+								<h3 class="panel-title"><a data-toggle="collapse" href="#collapseThree" data-parent="#accordion">SMALL DORM</a></h3>
+								<p>4 BEDS WITH PRIVATE BATHROOM</p>
+						</div>
+
+				<div id="collapseThree" class="panel-collapse collapse">
+
+							<div class="panel-body">
+								<ul>
+									<li>4 beds</li>
+									<li>En-suite bathroom</li>
+									<li>Daily cleaning</li>
+									<li>Lockers</li>
+									<li>Electrical Sockets</li>
+								</ul>
+									<img src="./img/downtown-ba_1.jpg">
+							</div>
+			 		</div>
+			</div>
+
+	<div class="items-container-rounded">
+			 <div class="panel-heading">
+								<h3 class="panel-title"><a data-toggle="collapse" href="#collapseFour" data-parent="#accordion">PRIVATE ROOMS</a></h3>
+								<p>DOUBLE BED OR TWIN ROOM ENSUITE</p>
+
+				</div>
+
+				<div id="collapseFour" class="panel-collapse collapse">
+
+							 <div class="panel-body">
+								 <ul>
+									<li>Double or Twin Bed</li>
+									<li>En-suite bathroom</li>
+									<li>Daily cleaning</li>
+									<li>Lockers</li>
+									<li>Electrical Sockets</li>
+									<li>Towels included</li>
+								</ul>
+									<img src="./img/download (1).jpg">
+								</div>
+			 			</div>
+				</div>
+
+				<h2 id="facilites-anchor">Facilities</h2>
+<div id="facilities" class="three-column">
+
+<ul>
+	<li>Free Secure Onsite Carpark</li>
+	<li>Free WiFi</li>
+	<li>TV Room</li>
+	<li>Chill Out Zone</li>
+	<li>Late Checkout</li>
+	<li>Lockers in Rooms</li>
+	<li>Lockers with Power Points</li>
+	<li>Free Storage</li>
+	<li>Pool Table</li>
+	<li>Poker/Cards Table</li>
+	<li>Giant Jenga</li>
+	<li>Tour Desk</li>
+	<li>Breakfast included</li>
+	<li>Great Canteen</li>
+	<li>24 Hour Secure Access</li>
+</ul>
+
+	
+</div>
+
+<h2 id="location-anchor">Location Map</h2>
+<div id="responsive-map">
+	<div id="map">
+		
+	</div>
+</div>
+
+
+
+		<script>
+			function initMap() {
+				var mapDiv = document.getElementById('map');
+				var map = new google.maps.Map(mapDiv, {
+					center: {lat: 52.668940, lng: -8.623563},
+
+					zoom: 16
+				});
+			}
+		</script>
+
+
+		<a href="#" class="mapp-travelmode mapp-travelmode-on" title="By car"><span class="mapp-dir-icon mapp-dir-car"></span></a>
+		<a href="#" class="mapp-travelmode" title="Public Transit"><span class="mapp-dir-icon mapp-dir-transit"></span></a>
+		<a href="#" class="mapp-travelmode" title="Walking"><span class="mapp-dir-icon mapp-dir-walk"></span></a>
+		<a href="#" class="mapp-travelmode" title="Bicycling"><span class="mapp-dir-icon mapp-dir-bike"></span></a>
+	</div>
+
+
+	<div class="mapp-route">
+		<a href="#" class="mapp-myloc">My location</a>
+
+		<div>
+			<span class="mapp-dir-icon mapp-dir-a"></span>
+			<input class="mapp-dir-saddr" tabindex="1">
+			<a href="#" class="mapp-dir-swap"><span class="mapp-dir-icon mapp-dir-arrows" title="Swap start and end"></span></a>
+
+		</div>
+		<div class="mapp-dir-saddr-err"></div>
+
+		<div>
+			<span class="mapp-dir-icon mapp-dir-b"></span>
+			<input class="mapp-dir-daddr" tabindex="2">
+		</div>
+		<div class="mapp-dir-daddr-err"></div>
+	</div>
+
+	<div style="margin-top: 10px;">
+		<input type="submit" class="mapp-dir-get" value="Get Directions">
+		<a href="#" class="mapp-dir-print">Print</a>
+		&nbsp;<a href="#" class="mapp-dir-close">Close</a>
+		<span class="mapp-spinner" style="display:none"></span>
+	</div>
+</form>
+
+<div class="mapp-dir-renderer"></div></div></div>
+</div>
+
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+				async defer></script>
+</div>
 </body>
+<footer>
+<p>No. 28 John Street<br>Limerick City</br></p>
+<a href="http//www.google.com"><p>Call: 1800202020</p></a>
+</footer>
 </html>
